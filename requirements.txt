@@ -1,0 +1,13 @@
+rdkit-pypi==2022.9.5
+iopath
+lmdb
+ml_collections
+numpy<2
+scipy
+tensorboardX
+tqdm
+tokenizers
+wandb
+scikit-learn
+ipython
+pandas

@@ -1,3 +1,33 @@
+# EECS 498 Replication Project
+
+## Setup
+
+Check that the python version is 3.9.7.
+
+```bash
+python --version
+> Python 3.9.7
+```
+
+Install the required python packages.
+
+```bash
+pip install torch==2.0.0 --index-url https://download.pytorch.org/whl/cpu
+pip install -r requirements.txt
+```
+
+Install Uni-Core.
+
+```bash
+wget https://github.com/dptech-corp/Uni-Core/archive/refs/tags/0.0.3.zip
+unzip Uni-Core-0.0.3
+cd Uni-Core-0.0.3
+python setup.py install --disable-cuda-ext
+```
+
+
+Original `README.md` below:
+
 # DrugCLIP: Contrastive Protein-Molecule Representation Learning for Virtual Screening
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/xxxx/blob/main/LICENSE)
