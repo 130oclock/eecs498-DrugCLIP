@@ -2,3 +2,6 @@
 *.whl
 Uni-Core*
 *.pt
+*.zip
+lit_pcba/
+DUD-E/
