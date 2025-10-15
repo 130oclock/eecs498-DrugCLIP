@@ -11,6 +11,8 @@ nvcc -V
 > 11.8
 ```
 
+### Optional for Trying CUDA
+
 If on windows, install version 17.8 of the Visual C++ Build Tools from this link: https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-history.
 
 Then locate "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.38.33130\include\type_traits" and add the following between lines 1162 and 1163.
@@ -18,6 +20,8 @@ Then locate "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\T
 ```cpp
 #define _ENABLE_EXTENDED_ALIGNED_STORAGE
 ```
+
+### Required
 
 Install the required python packages.
 
