@@ -5,4 +5,5 @@ Uni-Core*
 *.zip
 lit_pcba/
 DUD-E/
+other/
 .vscode/

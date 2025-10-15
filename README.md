@@ -11,11 +11,12 @@ nvcc -V
 > 11.8
 ```
 
-### Optional for Trying CUDA
+### Optional for Trying CUDA on Windows
 
 If on windows, install version 17.8 of the Visual C++ Build Tools from this link: https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-history.
+Add `C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.38.33130\bin\Hostx64\x64\` to the environment variables.
 
-Then locate "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.38.33130\include\type_traits" and add the following between lines 1162 and 1163.
+Then locate `C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.38.33130\include\type_traits` and add the following between lines 1162 and 1163.
 
 ```cpp
 #define _ENABLE_EXTENDED_ALIGNED_STORAGE
@@ -37,6 +38,13 @@ wget https://github.com/dptech-corp/Uni-Core/archive/refs/tags/0.0.3.zip
 unzip Uni-Core-0.0.3
 cd Uni-Core-0.0.3
 python setup.py install
+```
+
+Using the bash scripts does not seem to work, so instead run the PCBA test using the following command:
+
+```bash
+mkdir test
+python ./unimol/test.py --user-dir ./unimol $data_path "./data" --valid-subset test --results-path ./test --num-workers 8 --ddp-backend=c10d --batch-size 8 --task drugclip --loss in_batch_softmax --arch drugclip --fp16 --fp16-init-scale 4 --fp16-scale-window 256 --seed 1 --path checkpoint_best.pt --log-interval 100 --log-format simple --max-pocket-atoms 511 --test-task PCBA
 ```
 
 
