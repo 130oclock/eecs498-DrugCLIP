@@ -2,18 +2,28 @@
 
 ## Setup
 
-Check that the python version is 3.9.7.
+Check that the python version is 3.9.7 and are using CUDA 11.8.
 
 ```bash
-python --version
+python -V
 > Python 3.9.7
+nvcc -V
+> 11.8
+```
+
+If on windows, install version 17.8 of the Visual C++ Build Tools from this link: https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-history.
+
+Then locate "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.38.33130\include\type_traits" and add the following between lines 1162 and 1163.
+
+```cpp
+#define _ENABLE_EXTENDED_ALIGNED_STORAGE
 ```
 
 Install the required python packages.
 
 ```bash
-pip install torch==2.0.0 --index-url https://download.pytorch.org/whl/cpu
 pip install -r requirements.txt
+pip install torch==2.0.0 torchvision==0.15.1 torchaudio==2.0.1 --index-url https://download.pytorch.org/whl/cu118
 ```
 
 Install Uni-Core.
@@ -22,7 +32,7 @@ Install Uni-Core.
 wget https://github.com/dptech-corp/Uni-Core/archive/refs/tags/0.0.3.zip
 unzip Uni-Core-0.0.3
 cd Uni-Core-0.0.3
-python setup.py install --disable-cuda-ext
+python setup.py install
 ```
 
 

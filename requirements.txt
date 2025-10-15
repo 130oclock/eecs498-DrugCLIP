@@ -11,3 +11,4 @@ wandb
 scikit-learn
 ipython
 pandas
+ninja
