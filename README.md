@@ -1,14 +1,26 @@
 # EECS 498 Replication Project
 
+## Modules
+
+Always run these when you create a new console on Great Lakes.
+
+```bash
+module load cuda/11.8.0
+module load python/3.9.12
+
+# Only run once the virtual environment has been created
+source ./.venv/bin/activate
+```
+
 ## Setup
 
-Check that the python version is 3.9.7 and are using CUDA 11.8.
+Check that the python version is 3.9.x and are using CUDA 11.8.
 
 ```bash
 python -V
-> Python 3.9.7
+> Python 3.9.x
 nvcc -V
-> 11.8
+> 11.8.0
 ```
 
 ### Optional for Trying CUDA on Windows
@@ -27,6 +39,8 @@ Then locate `C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\T
 Install the required python packages.
 
 ```bash
+python -m venv ./.venv/
+source ./.venv/bin/activate
 pip install -r requirements.txt
 pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cu118
 ```
@@ -40,7 +54,7 @@ cd Uni-Core-0.0.3
 python setup.py install
 ```
 
-Using the bash scripts does not seem to work, so instead run the PCBA test using the following command:
+Using the bash scripts does not seem to work on Windows, so instead run the PCBA test using the following command:
 
 ```bash
 mkdir test
