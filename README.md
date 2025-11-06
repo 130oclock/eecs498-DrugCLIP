@@ -12,6 +12,8 @@ module load python/3.9.12
 source ./.venv/bin/activate
 ```
 
+Shared folder: `/scratch/eecs498f25s006_class_root/eecs498f25s006_class/shared_data/group2_DrugCLIP/eecs498-DrugCLIP`
+
 ## Setup
 
 Check that the python version is 3.9.x and are using CUDA 11.8.
