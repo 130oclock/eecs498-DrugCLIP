@@ -1,13 +1,15 @@
 #!/bin/bash
 
+#SBATCH --job-name=lit-pcba-job
 #SBATCH --account=eecs498f25s006_class
 #SBATCH --partition=spgpu
 
 #SBATCH --time=02:00:00
-#SBATCH --gpus=1
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=4
 #SBATCH --mem=32g
+#SBATCH --gpus=1
 
-#SBATCH --job-name=lit-pcba-job
 #SBATCH --output=/home/%u/%x-%j.log
 
 #SBATCH --mail-user=aidand@umich.edu
