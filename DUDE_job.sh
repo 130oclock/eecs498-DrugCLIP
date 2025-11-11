@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --job-name=lit-pcba-job
+#SBATCH --job-name=dude-job
 #SBATCH --account=eecs498f25s006_class
 #SBATCH --partition=spgpu
 
