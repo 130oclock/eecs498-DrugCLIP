@@ -27,7 +27,7 @@ lr=1e-3
 
 export NCCL_ASYNC_ERROR_HANDLING=1
 export OMP_NUM_THREADS=1
-CUDA_VISIBLE_DEVICES="1" python -m torch.distributed.launch --nproc_per_node=$n_gpu --master_port=$MASTER_PORT $(which unicore-train) $data_path --user-dir ./unimol --train-subset train --valid-subset valid \
+CUDA_VISIBLE_DEVICES="0" python -m torch.distributed.launch --nproc_per_node=$n_gpu --master_port=$MASTER_PORT $(which unicore-train) $data_path --user-dir ./unimol --train-subset train --valid-subset valid \
        --num-workers 8 --ddp-backend=c10d \
        --task drugclip --loss in_batch_softmax --arch drugclip  \
        --max-pocket-atoms 256 \

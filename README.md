@@ -60,7 +60,7 @@ Using the bash scripts does not seem to work on Windows, so instead run the PCBA
 
 ```bash
 mkdir test
-python ./unimol/test.py --user-dir ./unimol $data_path "./data" --valid-subset test --results-path ./test --num-workers 8 --ddp-backend=c10d --batch-size 8 --task drugclip --loss in_batch_softmax --arch drugclip --fp16 --fp16-init-scale 4 --fp16-scale-window 256 --seed 1 --path checkpoint_best.pt --log-interval 100 --log-format simple --max-pocket-atoms 511 --test-task PCBA
+./test.sh
 ```
 
 
