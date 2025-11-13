@@ -5,5 +5,7 @@ Uni-Core*
 *.zip
 lit_pcba/
 DUD-E/
+train_no_test_af/
+__MACOSX
 other/
 .vscode/

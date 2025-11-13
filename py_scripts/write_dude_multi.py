@@ -19,11 +19,6 @@ from rdkit.Chem.MolStandardize import rdMolStandardize
 
 RDLogger.DisableLog('rdApp.*')
 
-parser = argparse.ArgumentParser()
-parser.add_argument('--mol_data_path', type=str, default='/data/protein/DUD-E/raw/all')
-parser.add_argument('--lmdb_path', type=str, default='docked_dude_fromweb2D.lmdb')
-args = parser.parse_args()
-
 
 def gen_conformation(mol, num_conf=20, num_worker=8):
     try:
@@ -198,6 +193,11 @@ def write_lmdb(data, lmdb_path):
             num += 1
 
 if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--mol_data_path', type=str, default='/data/protein/DUD-E/raw/all')
+    parser.add_argument('--lmdb_path', type=str, default='docked_dude_fromweb2D.lmdb')
+    args = parser.parse_args()
+
     protein_path = [os.path.join(args.mol_data_path, x, 'receptor.pdb') for x in os.listdir(args.mol_data_path)]
     act_mol_path = [os.path.join(args.mol_data_path, x, 'actives_final.ism') for x in os.listdir(args.mol_data_path)]
     decoy_mol_path = [os.path.join(args.mol_data_path, x, 'decoys_final.ism') for x in os.listdir(args.mol_data_path)]
