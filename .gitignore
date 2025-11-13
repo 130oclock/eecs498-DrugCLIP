@@ -1,11 +1,14 @@
 **/__pycache__/
 *.whl
-Uni-Core*
+.vscode/
+
 *.pt
 *.zip
+data/emb/
+
+Uni-Core*
+
 lit_pcba/
 DUD-E/
 train_no_test_af/
 __MACOSX
-other/
-.vscode/

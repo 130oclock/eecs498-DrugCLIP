@@ -15,6 +15,7 @@ from unicore import tasks
 import numpy as np
 from tqdm import tqdm
 import unicore
+import time
 
 logging.basicConfig(
     format="%(asctime)s | %(levelname)s | %(name)s | %(message)s",
@@ -60,6 +61,15 @@ def main(args):
     model.eval()
     
     names, scores = task.retrieve_mols(model, args.mol_path, args.pocket_path, args.emb_dir, 10000)
+
+    # Write results to a file
+    filename = "results-" + time.strftime("%Y%m%d-%H%M%S") + ".csv"
+    with open(args.results_path + "/" + filename, "w") as file:
+        file.write("name, score\n")
+        for i in range(len(names)):
+            file.write(f"{names[i]}, {scores[i]}\n")
+
+
 
 
 def cli_main():

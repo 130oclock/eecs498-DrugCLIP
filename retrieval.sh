@@ -1,8 +1,8 @@
 results_path="./test"  # replace to your results path
 batch_size=8
 weight_path="checkpoint_best.pt"
-MOL_PATH="mols.lmdb" # path to the molecule file
-POCKET_PATH="pocket.lmdb" # path to the pocket file
+MOL_PATH="./data/custom/1A7X/mols.lmdb" # path to the molecule file
+POCKET_PATH="./data/custom/1A7X/pocket.lmdb" # path to the pocket file
 EMB_DIR="./data/emb" # path to the cached mol embedding file
 
 CUDA_VISIBLE_DEVICES="0" python ./unimol/retrieval.py --user-dir ./unimol $data_path "./data" --valid-subset test \
