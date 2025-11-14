@@ -13,3 +13,4 @@ ipython
 pandas
 ninja
 openbabel-wheel
+biopandas

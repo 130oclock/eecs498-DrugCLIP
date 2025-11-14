@@ -35,9 +35,7 @@ def write_custom_lmdb(args, mol_data_path):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(
-        prog='LMDB formatter',
-        description='Writes a list of smiles and a protein pocket to lmdb files')
+    parser = argparse.ArgumentParser(description='Writes a list of smiles and a protein pocket to lmdb files')
     parser.add_argument('name', metavar='N', type=str, help='The protein name')
 
     args = parser.parse_args()
