@@ -13,7 +13,7 @@ def write_custom_lmdb(args, mol_data_path):
     make_molecules: bool = not os.path.isfile(pocket.replace(protein_name, 'mols.lmdb')) or (args.force and args.molecules)
     make_pocket: bool = not os.path.isfile(pocket.replace(protein_name, 'pocket.lmdb')) or (args.force and args.pocket)
 
-    if (make_molecules or make_pocket) and not os.path.isfile(pocket.replace(protein_name, 'crystal_ligand.mol2')):
+    if not os.path.isfile(pocket.replace(protein_name, 'crystal_ligand.mol2')):
         # converts the receptor pdb into mol2
         print('Converting receptor.pdb to crystal_ligand.mol2')
         obConversion = openbabel.OBConversion()
@@ -23,6 +23,7 @@ def write_custom_lmdb(args, mol_data_path):
         obConversion.ReadFile(mol, pocket)
 
         mol.AddHydrogens()
+        print("Atoms:", mol.NumAtoms())
 
         obConversion.WriteFile(mol, pocket.replace(protein_name, 'crystal_ligand.mol2'))
 
@@ -47,6 +48,7 @@ if __name__ == "__main__":
     parser.add_argument('name', metavar='NAME', type=str, help='the name of the protein')
     parser.add_argument('-d', '--data', type=str, help='the data directory', default='./data/custom/')
     parser.add_argument('-f', '--force', action='store_true', help='force the program to overwrite an existing lmdb')
+    parser.add_argument('-l', '--ligand', action='store_true', help='make crystal_ligand.mol2')
     parser.add_argument('-m', '--molecules', action='store_true', help='make molecules.lmdb')
     parser.add_argument('-p', '--pocket', action='store_true', help='make pocket.lmdb')
 
