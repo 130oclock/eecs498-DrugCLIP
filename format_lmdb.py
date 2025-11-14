@@ -29,16 +29,11 @@ def write_custom_lmdb(args, mol_data_path):
 
     if make_molecules:
         print('Parsing smiles to .lmdb')
-        # format smiles into lmdb
-        data = []
-        d_mol = (mol_parser(mol_path, pocket.replace(protein_name, 'crystal_ligand.mol2'), 1))
-
-        data.extend(d_mol)
-        write_lmdb(data, pocket.replace(protein_name, 'mols.lmdb'))
+        d_mol = (mol_parser(mol_path, "", 1))
+        write_lmdb(d_mol, pocket.replace(protein_name, 'mols.lmdb'))
 
     if make_pocket:
         print('Parsing pocket to .lmdb')
-        # write pocket into lmdb
         d = pocket_parser(pocket, pocket.replace(protein_name, 'crystal_ligand.mol2'), 0)
         write_lmdb([d], pocket.replace(protein_name, 'pocket.lmdb'))
 

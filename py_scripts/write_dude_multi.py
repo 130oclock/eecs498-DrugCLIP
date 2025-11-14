@@ -157,7 +157,7 @@ def parser(protein_path, mol_path, ligand_path, activity, pocket_index, raid=6):
 def mol_parser(mol_path, ligand_path, label):
     data_mols = read_smi_mol(mol_path)
     data_mols = [m for m in data_mols if m is not None]  
-    ligand = read_mol2_ligand(ligand_path)
+    #ligand = read_mol2_ligand(ligand_path)
     pool = mp.Pool(32) 
     mols = [m for m in tqdm.tqdm(pool.imap_unordered(convert_2Dmol_to_data, data_mols))]
     mols = [m for m in mols if m is not None]
