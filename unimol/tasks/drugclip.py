@@ -943,7 +943,7 @@ class DrugCLIP(UnicoreTask):
     
     def retrieve_mols(self, model, mol_path, pocket_path, emb_dir, k, **kwargs):
  
-        os.makedirs(emb_dir, exist_ok=True)        
+        #os.makedirs(emb_dir, exist_ok=True)        
         mol_reps, mol_names = self.encode_mols_once(model, mol_path, emb_dir,  "atoms", "coordinates")
         
         pocket_dataset = self.load_pockets_dataset(pocket_path)
