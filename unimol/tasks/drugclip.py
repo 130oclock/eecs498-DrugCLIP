@@ -897,12 +897,12 @@ class DrugCLIP(UnicoreTask):
         
         # cache path is embdir/data_path.pkl
 
-        cache_path = os.path.join(emb_dir, data_path.split("/")[-1] + ".pkl")
+        #cache_path = os.path.join(emb_dir, data_path.split("/")[-1] + ".pkl")
 
-        if os.path.exists(cache_path):
-            with open(cache_path, "rb") as f:
-                mol_reps, mol_names = pickle.load(f)
-            return mol_reps, mol_names
+        #if os.path.exists(cache_path):
+            #with open(cache_path, "rb") as f:
+                #mol_reps, mol_names = pickle.load(f)
+            #return mol_reps, mol_names
 
         mol_dataset = self.load_retrieval_mols_dataset(data_path,atoms,coords)
         mol_reps = []
@@ -936,8 +936,8 @@ class DrugCLIP(UnicoreTask):
 
         # save the results
         
-        with open(cache_path, "wb") as f:
-            pickle.dump([mol_reps, mol_names], f)
+        #with open(cache_path, "wb") as f:
+            #pickle.dump([mol_reps, mol_names], f)
 
         return mol_reps, mol_names
     
