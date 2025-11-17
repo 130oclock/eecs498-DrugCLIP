@@ -2,7 +2,7 @@
 
 #SBATCH --job-name=1A7X-job
 #SBATCH --account=eecs498f25s006_class
-#SBATCH --partition=spgpu
+#SBATCH --partition=gpu
 
 #SBATCH --time=00:05:00
 #SBATCH --nodes=1

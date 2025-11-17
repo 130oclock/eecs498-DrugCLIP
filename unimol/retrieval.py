@@ -66,11 +66,11 @@ def main(args):
         print(f"{names[i]}, {scores[i]}")
 
     # Write results to a file
-    #filename = "results-" + time.strftime("%Y%m%d-%H%M%S") + ".csv"
-    #with open(args.results_path + "/" + filename, "w") as file:
-        #file.write("name, score\n")
-        #for i in range(len(names)):
-            #file.write(f"{names[i]}, {scores[i]}\n")
+    filename = "results-" + time.strftime("%Y%m%d-%H%M%S") + ".csv"
+    with open(args.results_path + "/" + filename, "w") as file:
+        file.write("name, score\n")
+        for i in range(len(names)):
+            file.write(f"{names[i]}, {scores[i]}\n")
 
 
 
