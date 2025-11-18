@@ -1,17 +1,6 @@
 import os
 import argparse
-from py_scripts.write_dude_multi import mol_parser, pocket_parser, write_lmdb, read_pdb
-
-def all_pocket_parser(protein_path, pocket_index):
-    protein = read_pdb(protein_path)
-    pocket_atom_type = protein['atom_type']
-    pocket_coord = protein['coord']
-    pocket_residue_type = protein['residue_type']
-    pocket_name = protein_path.split('/')[-2]
-    return {'pocket': pocket_name,
-            'pocket_index': pocket_index,
-            "pocket_atoms": pocket_atom_type, 
-            "pocket_coordinates": pocket_coord}
+from py_scripts.write_dude_multi import mol_parser, pocket_parser, write_lmdb
 
 def write_custom_lmdb(args, mol_data_path):
     protein_path = os.path.join(mol_data_path, args.name, 'receptor.pdb')

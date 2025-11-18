@@ -172,6 +172,7 @@ def pocket_parser(protein_path, ligand_path, pocket_index, raid=6):
     protein = read_pdb(protein_path)
     ligand = read_mol2_ligand(ligand_path)
     pocket_residue = get_different_raid(protein, ligand, raid=raid)
+    print(pocket_residue)
     pocket_atom_idx = [i for i, r in enumerate(protein['residue_name']) if r in pocket_residue]
     pocket_atom_type = [protein['atom_type'][i] for i in pocket_atom_idx]
     pocket_coord = [protein['coord'][i] for i in pocket_atom_idx]
