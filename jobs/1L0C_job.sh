@@ -23,7 +23,7 @@ module load cuda/11.8.0
 cd /scratch/eecs498f25s006_class_root/eecs498f25s006_class/shared_data/group2_DrugCLIP/eecs498-DrugCLIP
 source ./.venv/bin/activate
 
-target="1A7X"
+target="1L0C"
 
 results_path="./test"  # replace to your results path
 batch_size=8
