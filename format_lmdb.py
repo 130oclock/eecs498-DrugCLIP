@@ -13,7 +13,7 @@ def write_custom_lmdb(args, mol_data_path):
     make_molecules: bool = not os.path.isfile(pocket.replace(protein_name, 'mols.lmdb')) or (args.force and args.molecules)
     make_pocket: bool = not os.path.isfile(pocket.replace(protein_name, 'pocket.lmdb')) or (args.force and args.pocket)
 
-    if not os.path.isfile(pocket.replace(protein_name, 'crystal_ligand.mol2')):
+    if not os.path.isfile(pocket.replace(protein_name, 'crystal_ligand.mol2')) or (args.force and args.ligand):
         # converts the receptor pdb into mol2
         print('Converting receptor.pdb to crystal_ligand.mol2')
         obConversion = openbabel.OBConversion()
