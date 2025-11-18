@@ -1,6 +1,6 @@
 import os
 import argparse
-from py_scripts.write_dude_multi import mol_parser, write_lmdb, read_pdb
+from py_scripts.write_dude_multi import mol_parser, pocket_parser, write_lmdb, read_pdb
 
 def all_pocket_parser(protein_path, pocket_index):
     protein = read_pdb(protein_path)
@@ -29,7 +29,7 @@ def write_custom_lmdb(args, mol_data_path):
 
     if make_pocket:
         print('Parsing pocket to .lmdb')
-        d = all_pocket_parser(protein_path, 0)
+        d = pocket_parser(protein_path, protein_path.replace('receptor.pdb', 'crystal_ligand.mol2'), 0)
         write_lmdb([d], protein_path.replace('receptor.pdb', 'pocket.lmdb'))
 
 
