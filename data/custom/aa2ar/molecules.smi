@@ -1,17 +1,8 @@
-Nc1nc2ccc(Cl)cc2c2nc(-c3ccco3)nn12
-C#CCOc3nc(c1ccccc1)nc4sc2CCCc2c34 630004 CHEMBL1087078
-OC[C@H]3OC(n1cnc2c(NCCS(O)(=O)=O)ncnc12)[C@H](O)[C@@H]3O 607385 CHEMBL610435
-CCNC(=O)[C@H]4OC(n2cnc3c(N)nc(C#Cc1ccc(CCC(O)=O)cc1)nc23)[C@H](O)[C@@H]4O 605505 CHEMBL605065
-Ic5cccc(n1c(=S)sc3c1ncn4nc(c2ccco2)nc34)c5 623098 CHEMBL1093479
-C=CCn1c(=S)sc3c1ncn4nc(c2ccco2)nc34 623027 CHEMBL1092271
-C[C@H](C(=O)Nc1ccc2ccccc2c1)[NH+]3CCN(CC3)S(=O)(=O)c4ccccc4[N+](=O)[O-] C03457380
-C[C@@H]1CN(C[C@@H](O1)C)S(=O)(=O)c2ccc(cc2)C(=O)Nc3c(c4c(s3)C[NH+](CC4)C)C(=O)NC C08919992
-C[C@@H]1Cc2cc(ccc2N1S(=O)(=O)C)C(=O)Nc3cccc(c3)S(=O)(=O)NC4=[NH+]CCC4 C08940155
-Cc1cc(ccc1NC(=O)C(=O)NC[C@H](c2ccc3c(c2)CCCN3C)[NH+]4CCCC4)[N+](=O)[O-] C09135792
-C[NH+](C)[C@H](CNC(=O)c1cc(=O)[nH]c2c1cc(cc2)S(=O)(=O)N3CCOCC3)c4cccs4 C09171978
-C=CC[C@@H]1/C=C(\C)C[C@H](C)C[C@H](OC)[C@H]2O[C@@](O)(C(=O)C(=O)N3CCCC[C@H]3C(=O)O[C@H](/C(C)=C/[C@@H]3CC[C@@H](O)[C@H](OC)C3)[C@H](C)[C@@H](O)CC1=O)[C@H](C)C[C@@H]2OC
-C=CC[C@H]1/C=C(/C)C[C@H](C)C[C@H](OC)[C@H]2O[C@@](O)(C(=O)C(=O)N3CCCC[C@@H]3C(=O)O[C@@H](/C(C)=C/[C@H]3CC[C@@H](O)[C@@H](OC)C3)[C@H](C)[C@H](O)CC1=O)[C@@H](C)C[C@H]2OC
-C=CC[C@@H]1/C=C(\C)C[C@H](C)C[C@@H](OC)[C@@H]2O[C@@](O)(C(=O)C(=O)N3CCCC[C@@H]3C(=O)O[C@@H](/C(C)=C/[C@H]3CC[C@H](O)[C@@H](OC)C3)[C@H](C)[C@H](O)CC1=O)[C@@H](C)C[C@H]2OC
-C=CC[C@H]1/C=C(/C)C[C@H](C)C[C@@H](OC)[C@H]2O[C@@](O)(C(=O)C(=O)N3CCCC[C@@H]3C(=O)O[C@@H](/C(C)=C/[C@H]3CC[C@H](O)[C@H](OC)C3)[C@@H](C)[C@H](O)CC1=O)[C@@H](C)C[C@H]2OC
-C=CC[C@@H]1/C=C(\C)C[C@H](C)C[C@@H](OC)[C@@H]2O[C@](O)(C(=O)C(=O)N3CCCC[C@H]3C(=O)O[C@H](/C(C)=C/[C@H]3CC[C@H](O)[C@@H](OC)C3)[C@H](C)[C@@H](O)CC1=O)[C@@H](C)C[C@@H]2OC
-C=CC[C@@H]1/C=C(\C)C[C@H](C)C[C@H](OC)[C@@H]2O[C@@](O)(C(=O)C(=O)N3CCCC[C@@H]3C(=O)O[C@H](/C(C)=C/[C@@H]3CC[C@@H](O)[C@@H](OC)C3)[C@@H](C)[C@H](O)CC1=O)[C@H](C)C[C@@H]2OC
+Nc4nc(c1ccccc1)c3c(=O)c2ccccc2c3n4 301088 CHEMBL369573
+Nc3nc(NCCc1ccc(O)cc1)nc4nc(c2ccco2)nn34 184427 CHEMBL113142
+COc6ccc(N5CCN(CCn1cnc3c1nc(N)n4nc(c2ccco2)nc34)CC5)cc6 407648 CHEMBL245848
+CC(C)c1c(C(=O)Nc2ccccc2O)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CC[C@@H](O)C[C@@H](O)CC(=O)O
+CC(C)c1c(C(=O)Nc2ccccc2)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CC[C@@H](O)C[C@@H](O)CC(=O)O
+CC(C)c1c(C(=O)Nc2ccccc2)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CC[C@H](O)C[C@@H](O)CC(=O)O
+CC(C)c1c(C(=O)Nc2ccccc2)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CC[C@@H](O)C[C@H](O)CC(=O)O
+CC(C)c1c(C(=O)Nc2ccccc2)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CC[C@H](O)C[C@H](O)CC(=O)O
