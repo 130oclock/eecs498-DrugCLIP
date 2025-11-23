@@ -186,7 +186,7 @@ def pocket_parser(protein_path, ligand_path, pocket_index, raid=6):
 def write_lmdb(data, lmdb_path):
     #resume
 
-    env = lmdb.open(lmdb_path, subdir=False, readonly=False, lock=False, readahead=False, meminit=False, map_size=1099511627776)
+    env = lmdb.open(lmdb_path, subdir=False, readonly=False, lock=False, readahead=False, meminit=False, map_size=1073741824)
     num = 0
     with env.begin(write=True) as txn:
         for d in data:

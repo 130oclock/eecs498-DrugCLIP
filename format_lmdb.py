@@ -36,7 +36,7 @@ def write_custom_lmdb(args, mol_data_path):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Writes a list of smiles and a protein pocket to lmdb files')
     parser.add_argument('name', metavar='NAME', type=str, help='the name of the protein')
-    parser.add_argument('-d', '--data', type=str, help='the data directory', default='./data/custom/')
+    parser.add_argument('-d', '--data', type=str, help='the data directory', default=os.path.join(os.getcwd(), "data", "custom"))
     parser.add_argument('-f', '--force', action='store_true', help='force the program to overwrite an existing lmdb')
     parser.add_argument('-m', '--molecules', action='store_true', help='make molecules.lmdb')
     parser.add_argument('-p', '--pocket', action='store_true', help='make pocket.lmdb')
