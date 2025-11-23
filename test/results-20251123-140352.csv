@@ -1,0 +1,10 @@
+# our protein, our molecules
+name, score
+Nc1nc(NCCc2ccc(O)cc2)nc2nc(-c3ccco3)nn12, 0.8779296875
+COc1ccc(N2CCN(CCn3cnc4c3nc(N)n3nc(-c5ccco5)nc43)CC2)cc1, 0.65283203125
+Nc1nc(-c2ccccc2)c2c(n1)-c1ccccc1C2=O, 0.345703125
+CC(C)c1c(C(=O)Nc2ccccc2)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CC[C@@H](O)C[C@@H](O)CC(=O)O, -0.1826171875
+CC(C)c1c(C(=O)Nc2ccccc2)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CC[C@@H](O)C[C@H](O)CC(=O)O, -0.1907958984375
+CC(C)c1c(C(=O)Nc2ccccc2)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CC[C@H](O)C[C@@H](O)CC(=O)O, -0.2005615234375
+CC(C)c1c(C(=O)Nc2ccccc2)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CC[C@H](O)C[C@H](O)CC(=O)O, -0.204345703125
+CC(C)c1c(C(=O)Nc2ccccc2O)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CC[C@@H](O)C[C@@H](O)CC(=O)O, -0.2274169921875

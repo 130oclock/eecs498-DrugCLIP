@@ -1,0 +1,10 @@
+# DUD-E protein, our molecules
+name, score
+Nc1nc(NCCc2ccc(O)cc2)nc2nc(-c3ccco3)nn12, 0.8505859375
+COc1ccc(N2CCN(CCn3cnc4c3nc(N)n3nc(-c5ccco5)nc43)CC2)cc1, 0.69921875
+Nc1nc(-c2ccccc2)c2c(n1)-c1ccccc1C2=O, 0.2208251953125
+CC(C)c1c(C(=O)Nc2ccccc2)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CC[C@@H](O)C[C@@H](O)CC(=O)O, -0.11865234375
+CC(C)c1c(C(=O)Nc2ccccc2)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CC[C@@H](O)C[C@H](O)CC(=O)O, -0.12457275390625
+CC(C)c1c(C(=O)Nc2ccccc2)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CC[C@H](O)C[C@@H](O)CC(=O)O, -0.133544921875
+CC(C)c1c(C(=O)Nc2ccccc2)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CC[C@H](O)C[C@H](O)CC(=O)O, -0.138916015625
+CC(C)c1c(C(=O)Nc2ccccc2O)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CC[C@@H](O)C[C@@H](O)CC(=O)O, -0.169677734375
