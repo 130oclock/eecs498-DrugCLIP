@@ -123,7 +123,7 @@ def read_mol2_ligand(path):
 def read_smi_mol(path):
     with open(path, 'r') as f:
         mols_lines = list(f.readlines())
-    smis = [l.split(' ')[0] for l in mols_lines]
+    smis = [l.split(' ')[0].strip() for l in mols_lines]
     mols = [Chem.MolFromSmiles(m) for m in smis]
     return mols
 
@@ -159,7 +159,7 @@ def mol_parser(mol_path, ligand_path, label):
     data_mols = [m for m in data_mols if m is not None]  
     #ligand = read_mol2_ligand(ligand_path)
     pool = mp.Pool(32) 
-    mols = [m for m in tqdm.tqdm(pool.imap_unordered(convert_2Dmol_to_data, data_mols))]
+    mols = [m for m in tqdm.tqdm(pool.map(convert_2Dmol_to_data, data_mols))]
     mols = [m for m in mols if m is not None]
     return [{'atoms': m['atom_types'], 
             'coordinates': m['coords'], 
