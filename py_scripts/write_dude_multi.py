@@ -177,7 +177,7 @@ def pocket_parser(protein_path, ligand_path, pocket_index, raid=6):
     pocket_atom_type = [protein['atom_type'][i] for i in pocket_atom_idx]
     pocket_coord = [protein['coord'][i] for i in pocket_atom_idx]
     pocket_residue_type = [protein['residue_type'][i] for i in pocket_atom_idx]
-    pocket_name = protein_path.split('/')[-2]
+    pocket_name = protein_path.split(os.sep)[-2]
     return {'pocket': pocket_name,
             'pocket_index': pocket_index,
             "pocket_atoms": pocket_atom_type, 

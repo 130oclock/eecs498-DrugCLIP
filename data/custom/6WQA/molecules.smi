@@ -1,7 +1,9 @@
-n1n3c(nc(nc3nc1c2occc2)NCCc4ccc(O)cc4)N ZMA
+n1n3c(nc(nc3nc1c2occc2)NCCc4ccc(O)cc4)N 176407 CHEMBL113142
+
 Nc4nc(c1ccccc1)c3c(=O)c2ccccc2c3n4 301088 CHEMBL369573
 Nc3nc(NCCc1ccc(O)cc1)nc4nc(c2ccco2)nn34 184427 CHEMBL113142
 COc6ccc(N5CCN(CCn1cnc3c1nc(N)n4nc(c2ccco2)nc34)CC5)cc6 407648 CHEMBL245848
+
 CC(C)c1c(C(=O)Nc2ccccc2O)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CC[C@@H](O)C[C@@H](O)CC(=O)O
 CC(C)c1c(C(=O)Nc2ccccc2)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CC[C@@H](O)C[C@@H](O)CC(=O)O
 CC(C)c1c(C(=O)Nc2ccccc2)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CC[C@H](O)C[C@@H](O)CC(=O)O
