@@ -53,7 +53,7 @@ Install Uni-Core.
 wget https://github.com/dptech-corp/Uni-Core/archive/refs/tags/0.0.3.zip
 unzip Uni-Core-0.0.3
 cd Uni-Core-0.0.3
-python setup.py install
+pip install .
 ```
 
 Using the bash scripts does not seem to work on Windows, so instead run the PCBA test using the following command:
