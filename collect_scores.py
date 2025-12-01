@@ -3,7 +3,7 @@ import argparse
 import pandas as pd
 
 def main(args):
-    filenames = ['results-20251125-125041.csv', 'results-20251125-125318.csv', 'results-20251125-130221.csv']
+    filenames = ['results-20251127-190857.csv']
 
     with open(os.path.join(args.data, args.name, "real_mols.smi"), "r") as file:
         lines = file.read().splitlines()
